@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Анастасия Чернова](https://up.htmlacademy.ru/adaptive/24/user/1547199).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Коршунова](https://htmlacademy.ru/profile/masha_mk).
 
 ---
 
