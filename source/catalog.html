@@ -7,7 +7,7 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <svg width="102" height="84" viewBox="0 0 102 84" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0L50.6 59.1L101.7 0H0Z" fill="#23A9E1"/>
           <path d="M50.9 0H0V22.5L50.6 84L50.9 83.6L101.6 23.2V0H50.9ZM50.9 57.1L50.6 57.5L3.7 1.8H50.9H98.1L50.9 57.1Z" fill="#491213"/>
@@ -63,11 +63,11 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">Главная</a>
-            </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="#">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -79,73 +79,67 @@
         </div>
       </nav>
       <div class="intro">
-        <img class="intro__text" src="img/text-index.svg" alt="Welcome">
+        <img class="intro__text" src="img/SEDONA.svg" alt="Welcome">
       </div>
 
     </header>
 
     <main class="page-main">
+      <section class="photos">
+        <h1 class="photos__title">Фото и видео</h1>
+        <p class="photos__paragraph">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <ul class="photos__list">
+          <li class="photos__item">
 
-      <section class="description">
-        <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="description__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="description__list">
-          <li class="description__item">
-            <div class="description__container">
-              <h2 class="description__item-title">Настоящий городок</h2>
-              <p class="description__item-number">-№1-</p>
-              <p class="description__item-paragraph">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <img class="description__photo" src="img/photo-city@1x.jpg" width="520" height="260" alt="фото Седона">
-            <ul class="description__list-dignity">
-              <li class="description__attraction description__attraction--housing">
-                <h3 class="description__attraction-title">Жилье</h3>
-                <p class="description__attraction-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="description__attraction description__attraction--souvenirs">
-                <h3 class="description__attraction-title">Сувениры</h3>
-                <p class="description__attraction-paragraph">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="description__attraction description__attraction--food">
-                <h3 class="description__attraction-title">Еда</h3>
-                <p class="description__attraction-paragraph">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="description__item">
-            <div class="description__container">
-              <h2 class="description__item-title">Там есть мост дьявола</h2>
-              <p class="description__item-number">-№2-</p>
-              <p class="description__item-paragraph">Да, по нему можно пройтись если вы осмелитесь, конечно</p>
-            </div>
-            <img class="description__photo" src="img/photo-bridge@1x.jpg" width="520" height="260" alt="Мост">
-          </li>
-          <li class="description__item">
-            <h2 class="description__item-title">Небольшая площадь</h2>
-            <p class="description__item-number">-№3-</p>
-            <p class="description__item-paragraph">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="description__item">
-            <h2 class="description__item-title">Красивая дорога</h2>
-            <p class="description__item-number">-№4-</p>
-            <p class="description__item-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="description__item">
-            <h2 class="description__item-title">Мало туристов</h2>
-            <p class="description__item-number">-№5-</p>
-            <p class="description__item-paragraph">Большинство туристов едет в Гранд каньон и толпится там</p>
+            <figure class="image">
+              <a href="#" class="image__link">
+                <img src="img/photo-boris.jpg" width="280" height="280" alt="Фото Борис">
+              </a>
+              <figcaption class="image__description">
+                <h2 class="image__title">Неродные просторы</h2>
+                <p class="image__author">Автор фото: Борис</p>
+                <p class="image__likes">1350</p>
+              </figcaption>
+            </figure>
+            <figure class="image">
+              <a href="#" class="image__link">
+                <img src="img/photo-sergey.jpg" width="280" height="280" alt="Фото Сергей">
+              </a>
+              <figcaption class="image__description">
+                <h2 class="image__title">Местная растительность</h2>
+                <p class="image__author">Автор фото: Сергей</p>
+                <p class="image__likes">143</p>
+              </figcaption>
+            </figure>
+            <figure class="image">
+              <a href="#" class="image__link">
+                <img src="img/photo-petr.jpg" width="280" height="280" alt="Фото Пётр">
+              </a>
+              <figcaption class="image__description">
+                <h2 class="image__title">Дорога на север</h2>
+                <p class="image__author">Автор фото: Пётр</p>
+                <p class="image__likes">96</p>
+              </figcaption>
+            </figure>
+            <figure class="image">
+              <a href="#" class="image__link">
+                <img src="img/photo-anton.jpg" width="280" height="280" alt="Фото Антон">
+              </a>
+              <figcaption class="image__description">
+                <h2 class="image__title">Мост дьявола</h2>
+                <p class="image__author">Автор фото: Антон</p>
+                <p class="image__likes">254</p>
+              </figcaption>
+            </figure>
           </li>
         </ul>
       </section>
-
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Заинтересовались?</p>
-        <p class="contacts__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="contacts__button" href="#">Найти гостинницу</a>
-        <div class="contacts__map">
-          <img class="contacts__map-img" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
-        </div>
+      <section class="presentation">
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <figure class="presentation__video">
+          <video poster="img/video-mobile.jpg.jpg" width="320" height="201" controls="controls"></video>
+        </figure>
       </section>
 
     </main>
@@ -182,6 +176,7 @@
         </a>
       </div>
     </footer>
+
 
   </body>
 </html>

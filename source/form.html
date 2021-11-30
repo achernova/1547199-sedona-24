@@ -7,7 +7,7 @@
   <body class="page-body">
 
     <header class="page-header">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <svg width="102" height="84" viewBox="0 0 102 84" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0L50.6 59.1L101.7 0H0Z" fill="#23A9E1"/>
           <path d="M50.9 0H0V22.5L50.6 84L50.9 83.6L101.6 23.2V0H50.9ZM50.9 57.1L50.6 57.5L3.7 1.8H50.9H98.1L50.9 57.1Z" fill="#491213"/>
@@ -63,14 +63,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">Главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            <li class="main-nav__item  main-nav__item--active">
+              <a class="main-nav__link" href="#">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="htmlacademy.ru">htmlacademy</a>
@@ -79,73 +79,93 @@
         </div>
       </nav>
       <div class="intro">
-        <img class="intro__text" src="img/text-index.svg" alt="Welcome">
+        <img class="intro__text" src="img/SEDONA.svg" alt="Welcome">
       </div>
 
     </header>
 
     <main class="page-main">
-
-      <section class="description">
-        <h1 class="page-main__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="description__paragraph">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul class="description__list">
-          <li class="description__item">
-            <div class="description__container">
-              <h2 class="description__item-title">Настоящий городок</h2>
-              <p class="description__item-number">-№1-</p>
-              <p class="description__item-paragraph">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <img class="description__photo" src="img/photo-city@1x.jpg" width="520" height="260" alt="фото Седона">
-            <ul class="description__list-dignity">
-              <li class="description__attraction description__attraction--housing">
-                <h3 class="description__attraction-title">Жилье</h3>
-                <p class="description__attraction-paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="description__attraction description__attraction--souvenirs">
-                <h3 class="description__attraction-title">Сувениры</h3>
-                <p class="description__attraction-paragraph">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="description__attraction description__attraction--food">
-                <h3 class="description__attraction-title">Еда</h3>
-                <p class="description__attraction-paragraph">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-              </li>
-            </ul>
-          </li>
-          <li class="description__item">
-            <div class="description__container">
-              <h2 class="description__item-title">Там есть мост дьявола</h2>
-              <p class="description__item-number">-№2-</p>
-              <p class="description__item-paragraph">Да, по нему можно пройтись если вы осмелитесь, конечно</p>
-            </div>
-            <img class="description__photo" src="img/photo-bridge@1x.jpg" width="520" height="260" alt="Мост">
-          </li>
-          <li class="description__item">
-            <h2 class="description__item-title">Небольшая площадь</h2>
-            <p class="description__item-number">-№3-</p>
-            <p class="description__item-paragraph">Все интересные места находятся очень близко</p>
-          </li>
-          <li class="description__item">
-            <h2 class="description__item-title">Красивая дорога</h2>
-            <p class="description__item-number">-№4-</p>
-            <p class="description__item-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="description__item">
-            <h2 class="description__item-title">Мало туристов</h2>
-            <p class="description__item-number">-№5-</p>
-            <p class="description__item-paragraph">Большинство туристов едет в Гранд каньон и толпится там</p>
-          </li>
-        </ul>
+      <section class="intro">
+        <h1 class="intro__title">Оставьте свой отзыв</h1>
+        <p class="intro__paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
+      <section class="data">
+        <h2 class="visually-hidden">форма отзыва</h2>
+        <form class="form" action="#" method="POST">
 
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__title">Заинтересовались?</p>
-        <p class="contacts__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="contacts__button" href="#">Найти гостинницу</a>
-        <div class="contacts__map">
-          <img class="contacts__map-img" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
-        </div>
+          <fieldset class="form__name">
+            <legend class="form__name-legend">Представьтесь:</legend>
+            <p class="form__name-paragraph">
+              <label class="form__name-label" for="name">Имя*:</label>
+              <input class="form__name-input" name="name" id="name" type="text" required placeholder="Петр">
+            </p>
+            <p class="form__name-paragraph">
+              <label class="form__name-label" for="surname">Фамилия*:</label>
+              <input class="form__name-input" name="surname" id="surname" type="text" required placeholder="Иванов">
+            </p>
+            <p class="form__name-paragraph">
+              <label class="form__name-label" for="fathername">Отчество:</label>
+              <input class="form__name-input" name="fathername" id="fathername" type="text" placeholder="Александрович">
+            </p>
+          </fieldset>
+
+          <fieldset class="form__contacts">
+            <legend class="form__contacts-legend">Контактная информация</legend>
+            <p class="form__contacts-paragraph">
+              <label class="form__contacts-label" for="phone">Контактный телефон*:</label>
+              <input class="form__contacts-input" type="tel" name="phone" id="phone" pattern="8[0-9]{3}-[0-9]{7}" placeholder="Введите телефон" required>
+            </p>
+            <p class="form__contacts-paragraph">
+              <label class="form__contacts-label" for="email">Электронная почта*:</label>
+              <input class="form__contacts-input" type="email" name="email " id="email" placeholder="Введите e-mail" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__impress">
+            <legend class="form__impress-legend">Ваше общее впечатление:</legend>
+            <p class="form__impress-paragraph">
+              <input class="form__impress-input" name="radio" id="radio1" type="radio" checked>
+              <label class="form__impress-label" for="radio1">Скорее положительное</label>
+            </p>
+            <p class="form__impress-paragraph">
+              <input class="form__impress-input" name="radio" id="radio2" type="radio">
+              <label class="form__impress-label" for="radio2">Скорее отрицательное</label>
+            </p>
+            <p class="form__impress-paragraph">
+              <input class="form__impress-input" name="radio" id="radio3" type="radio">
+              <label class="form__impress-label" for="radio3">Затрудняюсь ответить</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__attraction">
+            <legend class="form__attraction-legend">Посещенные достопримечательности:</legend>
+            <p class="form__attraction-paragraph">
+              <input class="form__attraction-input" name="check" id="check1" type="checkbox" checked>
+              <label class="form__attraction-label" for="check1">Мост Дьявола</label>
+            </p>
+            <p class="form__attraction-paragraph">
+              <input class="form__attraction-input" name="check" id="check2" type="checkbox" checked>
+              <label class="form__attraction-label" for="check2">Гора-Колокол</label>
+            </p>
+            <p class="form__attraction-paragraph">
+              <input class="form__attraction-input" name="check" id="check3" type="checkbox" checked>
+              <label class="form__attraction-label" for="check3">Слайд-парк</label>
+            </p>
+            <p class="form__attraction-paragraph">
+              <input class="form__attraction-input" name="check" id="check4" type="checkbox">
+              <label class="form__attraction-label" for="check4">Красные скалы</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__describe">
+            <legend class="form__describe-legend">Опишите свои эмоции:</legend>
+            <label class="form__describe-label" for="text"></label>
+            <input class="form__describe-input" name="text" id="text" type="text" placeholder="Опишите подробно все свои восторги ">
+          </fieldset>
+
+          <button class="form__button" type="submit">Отправить отзыв</button>
+
+        </form>
       </section>
 
     </main>
@@ -182,6 +202,18 @@
         </a>
       </div>
     </footer>
+
+    <section class="modal-windows modal-windows--error">
+      <h2 class="modal-windows__title">Что-то пошло не так!</h2>
+      <p class="modal-windows__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal-windows__button" type="button">OK</button>
+    </section>
+
+    <section class="modal-windows modal-windows--send">
+      <h2 class="modal-windows__title">Ваш отзыв отправлен!</h2>
+      <p class="modal-windows__paragraph">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal-windows__button" type="button">OK</button>
+    </section>
 
   </body>
 </html>
