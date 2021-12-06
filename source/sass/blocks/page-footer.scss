@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.page-footer__teg {
+.page-footer__tag {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -16,7 +16,7 @@
 }
 
 .page-footer__list {
-  list-style: none;
+  @include list-style;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,6 +33,6 @@
 }
 
 .page-footer__link {
-
+  @include links;
   margin: auto;
 }

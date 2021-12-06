@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin links {
+  text-decoration: none;
+}
+
+@mixin list-style {
+  list-style: none;
+}

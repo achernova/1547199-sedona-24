@@ -19,7 +19,7 @@
 }
 
 .photos__list {
-  list-style: none;
+  @include list-style;
   color: $black;
   padding: 0;
 }

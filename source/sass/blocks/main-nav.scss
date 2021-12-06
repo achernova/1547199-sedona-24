@@ -3,6 +3,7 @@
 }
 
 .main-nav__list {
+  @include list-style;
   @include reset;
 }
 
@@ -16,6 +17,7 @@
 }
 
 .main-nav__link {
+  @include links;
   padding-top: 10px;
   padding-bottom: 10px;
   color: $white;
