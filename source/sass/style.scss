@@ -1,1 +1,16 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "global.scss";
+//blocks//
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/description.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/image.scss";
+@import "blocks/photos.scss";
+@import "blocks/contacts.scss";
+@import "blocks/modal-windows.scss";
+@import "blocks/presentation.scss";

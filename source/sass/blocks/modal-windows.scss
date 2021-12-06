@@ -1,0 +1,18 @@
+
+.modal-windows {
+  display: block;
+  text-align: center;
+}
+
+.modal-windows__button {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  color: $white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: $blue;
+  padding: 14px 63px 17px 63px;
+  border: none;
+}

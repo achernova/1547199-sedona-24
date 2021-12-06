@@ -1,0 +1,8 @@
+.presentation {
+  @include reset;
+  text-align: center;
+}
+
+.presentation__video {
+  @include reset;
+}
