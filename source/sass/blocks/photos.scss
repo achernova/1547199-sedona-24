@@ -1,0 +1,25 @@
+
+.photos {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.photos__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.photos__paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.photos__list {
+  @include list-style;
+  color: $black;
+  padding: 0;
+}

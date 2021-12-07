@@ -1,0 +1,102 @@
+.form {
+  margin: 0 auto;
+}
+
+.form__name,
+.form__contacts,
+.form__impress,
+.form__attraction,
+.form__describe {
+  @include reset;
+  border: none;
+}
+
+.form__name-legend,
+.form__contacts-legend,
+.form__impress-legend,
+.form__attraction-legend,
+.form__describe-legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__name-label,
+.form__contacts-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.form__impress-label,
+.form__attraction-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-right: 15px;
+  flex-shrink: 1;
+  text-transform: none;
+}
+
+.form__name-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  color: $black;
+  border: none;
+  background-color: $input-grey;
+  padding: 18px 0 14px 10px;
+  flex-shrink: 2;
+}
+
+.form__name-paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__contacts-label {
+  margin-bottom: 10px;
+}
+
+.form__contacts-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  width: 320px;
+  color: $black;
+  border: none;
+  background-color: $input-grey;
+  padding: 18px 0 14px 22px;
+}
+
+.form__describe-legend {
+  margin-bottom: 15px;
+}
+
+.form__describe-input {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 279px;
+  height: 160px;
+  background-color: $input-grey;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.form__button {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  color: $white;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: $blue;
+  padding: 14px 32px 17px 32px;
+  border: none;
+}

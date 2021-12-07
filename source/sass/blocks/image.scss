@@ -1,0 +1,40 @@
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.image__title {
+  color: $black;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.image__author {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  color: $black;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.image__likes {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.image__likes::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/like-icon.svg");
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,38 @@
+.page-footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-footer__tag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.page-footer__develop-paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.page-footer__list {
+  @include list-style;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-footer__item {
+  background-color: $blue;
+  display: flex;
+  width: 47px;
+  height: 48px;
+  margin-left: 5px;
+}
+
+.page-footer__link {
+  @include links;
+  margin: auto;
+}

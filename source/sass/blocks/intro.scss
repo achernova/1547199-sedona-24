@@ -1,0 +1,14 @@
+
+.intro {
+  background-color: $blue;
+  background-image: url("../img/back-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.intro__text {
+  z-index: 1;
+  padding-top: 90px;
+}
