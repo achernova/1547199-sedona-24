@@ -1,12 +1,29 @@
 .page-footer {
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 .page-footer__tag {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+}
+
+.page-footer__develop {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .page-footer__develop-paragraph {

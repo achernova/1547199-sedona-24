@@ -7,15 +7,44 @@
   padding-top: 55px;
   padding-bottom: 40px;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding-top: 40px;
+    text-align: center;
+    flex: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
-.description__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 auto;
-  text-align: center;
-  width: 285px;
+.description__photo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.description__photo-tab {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    flex: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.description__photo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .description__paragraph {
@@ -28,6 +57,10 @@
   padding-bottom: 27px;
   text-align: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .description__list {
@@ -37,15 +70,73 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $light-grey;
+  }
+}
+
+.description__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.description__item:nth-child(2) .description__container {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.description__item:nth-child(2) .description__photo {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.description__item:nth-child(3),
+.description__item:nth-child(4),
+.description__item:nth-child(5) {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 190px;
+    background-color: $light-grey;
+  }
 }
 
 .description__item-title {
   text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
-.description__item-number,
+.description__item-number {
+  text-align: center;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 10px;
+}
+
 .description__item-paragraph {
   text-align: center;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .description__list-dignity {
@@ -53,11 +144,30 @@
   list-style: none;
   margin-top: 39px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+  }
 }
 
 .description__attraction {
   position: relative;
   padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 0;
+    padding-top: 158px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 98px;
+    width: 282px;
+  }
 }
 
 .description__attraction-title {
@@ -65,12 +175,24 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 21px;
+  }
 }
 
 .description__attraction-paragraph {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .description__attraction--housing::before {
@@ -82,6 +204,18 @@
   background-repeat: no-repeat;
   top: -10px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/icon-house-tablet.svg");
+    width: 75px;
+    height: 72px;
+    left: 98px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 202px;
+  }
 }
 
 .description__attraction--souvenirs::before {
@@ -93,6 +227,18 @@
   background-repeat: no-repeat;
   top: -10px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/icon-gift-tablet.svg");
+    width: 75px;
+    height: 72px;
+    left: 98px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 202px;
+  }
 }
 
 .description__attraction--food::before {
@@ -104,4 +250,16 @@
   background-repeat: no-repeat;
   top: -10px;
   left: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/icon-burger-tablet.svg");
+    width: 75px;
+    height: 72px;
+    left: 98px;
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 202px;
+  }
 }

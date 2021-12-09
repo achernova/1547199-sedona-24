@@ -6,9 +6,24 @@
   background-repeat: no-repeat;
   padding-bottom: 80px;
   position: relative;
+  top: -30px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-tablet.png");
+    top: -95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back-desktop.png");
+    top: -98px;
+  }
 }
 
 .intro__text {
   z-index: 1;
   padding-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 130px;
+  }
 }
