@@ -1,6 +1,7 @@
 .contacts {
   margin: 0 auto;
   text-align: center;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin-top: 58px;
@@ -17,7 +18,6 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
-    width: 435px;
     margin: 0 auto;
   }
 }
@@ -73,6 +73,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,5 +86,6 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin: 0 auto;
   }
 }
