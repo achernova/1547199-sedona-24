@@ -1,3 +1,9 @@
 .review {
   text-align: center;
 }
+
+.review__title {
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}

@@ -6,6 +6,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
+    background-color: $white;
   }
 }
 
@@ -14,6 +15,7 @@
   display: block;
   position: relative;
   z-index: 1;
+  width: 102px;
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -28,5 +30,6 @@
     display: block;
     position: relative;
     z-index: 1;
+    width: 187px;
   }
 }
