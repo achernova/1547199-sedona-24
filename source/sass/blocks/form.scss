@@ -86,6 +86,7 @@
 .form__describe {
   @include reset;
   border: none;
+  margin:0 auto;
 }
 
 .form__name-legend,
