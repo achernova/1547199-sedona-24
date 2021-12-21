@@ -1,0 +1,13 @@
+.data {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
