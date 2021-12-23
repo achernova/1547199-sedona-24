@@ -80,6 +80,8 @@
 }
 
 .description__item {
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -144,6 +146,7 @@
   list-style: none;
   margin-top: 39px;
   margin-bottom: 35px;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     flex-grow: 2;
@@ -209,7 +212,7 @@
     background-image: url("../img/icon-house-tablet.svg");
     width: 75px;
     height: 72px;
-    left: 98px;
+    left: 130px;
     top: 50px;
   }
 
@@ -232,7 +235,7 @@
     background-image: url("../img/icon-gift-tablet.svg");
     width: 75px;
     height: 72px;
-    left: 98px;
+    left: 120px;
     top: 50px;
   }
 
@@ -255,7 +258,7 @@
     background-image: url("../img/icon-burger-tablet.svg");
     width: 75px;
     height: 72px;
-    left: 98px;
+    left: 130px;
     top: 50px;
   }
 

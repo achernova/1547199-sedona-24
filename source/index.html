@@ -186,11 +186,15 @@
         <p class="contacts__title">Заинтересовались?</p>
         <p class="contacts__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="contacts__button" href="#">Найти гостинницу</a>
-        <div class="contacts__map">
+        <!--<div class="contacts__map">
           <img class="contacts__map-img" src="img/map-mobile.jpg" width="320" height="350" alt="Карта">
           <img class="contacts__map-img-tablet" src="img/map-tablet.jpg" width="768" height="350" alt="Карта">
           <img class="contacts__map-img-desktop" src="img/map-desktop.jpg" width="1200" height="350" alt="Карта">
+        </div>-->
+        <div class="contacts__life-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243926.81080932822!2d-111.87236104808754!3d34.827691088929505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1640268748456!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+
       </section>
 
     </main>
@@ -229,21 +233,6 @@
       </div>
 
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
