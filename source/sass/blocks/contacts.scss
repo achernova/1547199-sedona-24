@@ -92,15 +92,15 @@
 }
 
 .contacts__life-map {
-  background-image: url('../img/map-mobile.jpg');
+  background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-image: url('../img/map-mtablet.jpg');
+    background-image: url("../img/map-mtablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url('../img/map-desktop.jpg');
+    background-image: url("../img/map-desktop.jpg");
   }
 }
 
