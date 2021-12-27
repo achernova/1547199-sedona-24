@@ -3,6 +3,7 @@
   width: 100%;
   text-align: center;
   box-sizing: border-box;
+  background-color: $white;
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;

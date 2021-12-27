@@ -1,18 +1,37 @@
 .presentation {
   @include reset;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
   text-align: center;
   padding-bottom: 40px;
+  position: relative;
+  top: -10px;
+  margin-bottom: 72px;
+
+  @media (min-width: $tablet-width) {
+    top: -4px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -70px;
+    padding-bottom: 14px;
+  }
 }
 
 .presentation__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 33px;
   }
 }
 
@@ -20,6 +39,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -34,7 +54,7 @@
   @include reset;
 
   @media (min-width: $tablet-width) {
-    margin-top: 68px;
+    margin-top: 80px;
   }
 }
 
