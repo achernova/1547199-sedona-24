@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1085px;
+    width: 1200px;
     background-color: $white;
   }
 }
@@ -25,6 +25,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 72px;
   }
 }
 
@@ -55,6 +59,10 @@
 .page-footer__develop-link {
   @media (min-width: $tablet-width) {
     margin-right: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 64px;
   }
 }
 

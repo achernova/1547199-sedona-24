@@ -2,7 +2,8 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
-  top: -55px;
+  top: -10px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     top: -71px;
@@ -34,8 +35,9 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 53px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -93,4 +95,30 @@
 
 .photos__item:last-child {
   margin-bottom: 0;
+}
+
+
+.photos::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
+  top: -86px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/intro-triangle-tablet.svg");
+    width: 768px;
+    top: -119px;
+    left: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg");
+    width: 1200px;
+    top: -158px;
+    left: 0;
+  }
 }

@@ -6,7 +6,6 @@
   text-align: center;
   padding-bottom: 40px;
   position: relative;
-  top: -10px;
   margin-bottom: 72px;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +38,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  margin: 0 auto;
   margin-bottom: 33px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;

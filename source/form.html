@@ -134,15 +134,15 @@
 
           <fieldset class="form__name">
             <legend class="form__name-legend">Представьтесь:</legend>
-            <p class="form__name-paragraph">
+            <p class="form__name-paragraph form__name-paragraph--first-name">
               <label class="form__name-label" for="name">Имя*:</label>
               <input class="form__name-input" name="name" id="name" type="text" required placeholder="Петр">
             </p>
-            <p class="form__name-paragraph">
+            <p class="form__name-paragraph form__name-paragraph--second-name">
               <label class="form__name-label" for="surname">Фамилия*:</label>
               <input class="form__name-input" name="surname" id="surname" type="text" required placeholder="Иванов">
             </p>
-            <p class="form__name-paragraph">
+            <p class="form__name-paragraph form__name-paragraph--fathers-name">
               <label class="form__name-label" for="fathername">Отчество:</label>
               <input class="form__name-input" name="fathername" id="fathername" type="text" placeholder="Александрович">
             </p>
@@ -150,11 +150,12 @@
 
           <fieldset class="form__contacts">
             <legend class="form__contacts-legend">Контактная информация</legend>
-            <p class="form__contacts-paragraph">
+            <p class="form__contacts-paragraph form__contacts-paragraph--phone">
               <label class="form__contacts-label" for="phone">Контактный телефон*:</label>
+              <label class="form__contacts-label-desktop" for="phone">Телефон*:</label>
               <input class="form__contacts-input" type="tel" name="phone" id="phone" pattern="8[0-9]{3}-[0-9]{7}" placeholder="Введите телефон" required>
             </p>
-            <p class="form__contacts-paragraph">
+            <p class="form__contacts-paragraph form__contacts-paragraph--mail">
               <label class="form__contacts-label" for="email">Электронная почта*:</label>
               <input class="form__contacts-input" type="email" name="email " id="email" placeholder="Введите e-mail" required>
             </p>
@@ -178,22 +179,25 @@
 
           <fieldset class="form__attraction">
             <legend class="form__attraction-legend">Посещенные достопримечательности:</legend>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check1" type="checkbox" checked>
-              <label class="form__attraction-label" for="check1">Мост Дьявола</label>
-            </p>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check2" type="checkbox" checked>
-              <label class="form__attraction-label" for="check2">Гора-Колокол</label>
-            </p>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check3" type="checkbox" checked>
-              <label class="form__attraction-label" for="check3">Слайд-парк</label>
-            </p>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check4" type="checkbox">
-              <label class="form__attraction-label" for="check4">Красные скалы</label>
-            </p>
+            <div class="form__attraction-container">
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check1" type="checkbox" checked>
+                <label class="form__attraction-label" for="check1">Мост Дьявола</label>
+              </p>
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check2" type="checkbox" checked>
+                <label class="form__attraction-label" for="check2">Гора-Колокол</label>
+              </p>
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check3" type="checkbox" checked>
+                <label class="form__attraction-label" for="check3">Слайд-парк</label>
+              </p>
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check4" type="checkbox">
+                <label class="form__attraction-label" for="check4">Красные скалы</label>
+              </p>
+            </div>
+
           </fieldset>
 
           <fieldset class="form__describe">
@@ -204,6 +208,7 @@
 
           <button class="form__button" type="submit">Отправить отзыв</button>
 
+          <span class="form__required">* - Обязательные поля</span>
         </form>
       </section>
 

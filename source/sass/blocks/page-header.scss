@@ -16,7 +16,7 @@
   display: block;
   position: relative;
   z-index: 1;
-  width: 102px;
+  width: 100%;
 
   @media (min-width: $desktop-width) {
     display: none;
