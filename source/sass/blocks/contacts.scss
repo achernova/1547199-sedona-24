@@ -2,9 +2,16 @@
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
+  margin-top: 29px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 58px;
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 21px;
   }
 }
 
@@ -13,6 +20,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-weight: 700;
@@ -27,16 +35,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    width: 435px;
+    width: 427px;
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+    margin-bottom: 20px;
   }
 }
 
@@ -50,11 +63,17 @@
   font-size: 21px;
   line-height: 26px;
   background-color: $blue;
-  padding: 14px 32px 17px 32px;
+  padding: 14px 40px 17px 40px;
   cursor: pointer;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 121px 17px 121px;
+    padding: 17px 128px 17px 128px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
   }
 }
 
@@ -88,4 +107,21 @@
     display: block;
     margin: 0 auto;
   }
+}
+
+.contacts__life-map {
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+  }
+}
+
+.contacts__life-map iframe {
+  width: 100%;
 }

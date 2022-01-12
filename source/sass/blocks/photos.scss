@@ -1,35 +1,51 @@
-
 .photos {
   margin: 0 auto;
   padding: 0;
+  position: relative;
+  top: -10px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    top: -71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+  }
 }
 
 .photos__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   margin: 0;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
   }
 }
 
 .photos__paragraph {
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   text-align: center;
+  margin: 0 auto;
+  margin-bottom: 53px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 24px;
-    margin-bottom: 65px;
+    margin: 0 auto;
+    margin-bottom: 81px;
+    width: 400px;
   }
 }
 
@@ -54,13 +70,16 @@
 
 .photos__item {
   display: flex;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     background-color: $input-grey;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $white;
+    margin-bottom: 0;
   }
 }
 
@@ -71,5 +90,35 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/4;
+  }
+}
+
+.photos__item:last-child {
+  margin-bottom: 0;
+}
+
+
+.photos::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 57px;
+  top: -86px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/intro-triangle-tablet.svg");
+    width: 768px;
+    top: -119px;
+    left: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg");
+    width: 1200px;
+    top: -158px;
+    left: 0;
   }
 }

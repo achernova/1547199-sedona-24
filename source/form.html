@@ -116,8 +116,9 @@
           </ul>
         </div>
       </nav>
-      <div class="intro intro--background">
-        <img class="intro__text" src="img/SEDONA.svg" alt="Welcome">
+      <div class="intro-inside intro--background">
+        <img class="intro-inside__text" src="img/SEDONA.svg" alt="Welcome">
+        <img class="intro-inside__text-tablet" src="img/SEDONA-tablet.svg" alt="Welcome">
       </div>
 
     </header>
@@ -133,15 +134,15 @@
 
           <fieldset class="form__name">
             <legend class="form__name-legend">Представьтесь:</legend>
-            <p class="form__name-paragraph">
+            <p class="form__name-paragraph form__name-paragraph--first-name">
               <label class="form__name-label" for="name">Имя*:</label>
               <input class="form__name-input" name="name" id="name" type="text" required placeholder="Петр">
             </p>
-            <p class="form__name-paragraph">
+            <p class="form__name-paragraph form__name-paragraph--second-name">
               <label class="form__name-label" for="surname">Фамилия*:</label>
               <input class="form__name-input" name="surname" id="surname" type="text" required placeholder="Иванов">
             </p>
-            <p class="form__name-paragraph">
+            <p class="form__name-paragraph form__name-paragraph--fathers-name">
               <label class="form__name-label" for="fathername">Отчество:</label>
               <input class="form__name-input" name="fathername" id="fathername" type="text" placeholder="Александрович">
             </p>
@@ -149,11 +150,12 @@
 
           <fieldset class="form__contacts">
             <legend class="form__contacts-legend">Контактная информация</legend>
-            <p class="form__contacts-paragraph">
+            <p class="form__contacts-paragraph form__contacts-paragraph--phone">
               <label class="form__contacts-label" for="phone">Контактный телефон*:</label>
+              <label class="form__contacts-label-desktop" for="phone">Телефон*:</label>
               <input class="form__contacts-input" type="tel" name="phone" id="phone" pattern="8[0-9]{3}-[0-9]{7}" placeholder="Введите телефон" required>
             </p>
-            <p class="form__contacts-paragraph">
+            <p class="form__contacts-paragraph form__contacts-paragraph--mail">
               <label class="form__contacts-label" for="email">Электронная почта*:</label>
               <input class="form__contacts-input" type="email" name="email " id="email" placeholder="Введите e-mail" required>
             </p>
@@ -177,22 +179,25 @@
 
           <fieldset class="form__attraction">
             <legend class="form__attraction-legend">Посещенные достопримечательности:</legend>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check1" type="checkbox" checked>
-              <label class="form__attraction-label" for="check1">Мост Дьявола</label>
-            </p>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check2" type="checkbox" checked>
-              <label class="form__attraction-label" for="check2">Гора-Колокол</label>
-            </p>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check3" type="checkbox" checked>
-              <label class="form__attraction-label" for="check3">Слайд-парк</label>
-            </p>
-            <p class="form__attraction-paragraph">
-              <input class="form__attraction-input" name="check" id="check4" type="checkbox">
-              <label class="form__attraction-label" for="check4">Красные скалы</label>
-            </p>
+            <div class="form__attraction-container">
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check1" type="checkbox" checked>
+                <label class="form__attraction-label" for="check1">Мост Дьявола</label>
+              </p>
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check2" type="checkbox" checked>
+                <label class="form__attraction-label" for="check2">Гора-Колокол</label>
+              </p>
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check3" type="checkbox" checked>
+                <label class="form__attraction-label" for="check3">Слайд-парк</label>
+              </p>
+              <p class="form__attraction-paragraph">
+                <input class="form__attraction-input" name="check" id="check4" type="checkbox">
+                <label class="form__attraction-label" for="check4">Красные скалы</label>
+              </p>
+            </div>
+
           </fieldset>
 
           <fieldset class="form__describe">
@@ -203,6 +208,7 @@
 
           <button class="form__button" type="submit">Отправить отзыв</button>
 
+          <span class="form__required">* - Обязательные поля</span>
         </form>
       </section>
 
@@ -236,7 +242,9 @@
       <div class="page-footer__develop">
         <p class="page-footer__develop-paragraph">Разработано</p>
         <a class="page-footer__develop-link" href="htmlacademy.ru">
-          <img class="page-footer__develop-icon" src="img/htmlacademy.svg" width="27" height="34" alt="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg>
         </a>
       </div>
     </footer>
@@ -258,5 +266,6 @@
 
     </section>
 
+    <script src="js/script.js"></script>
   </body>
 </html>
