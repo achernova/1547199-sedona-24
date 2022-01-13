@@ -151,28 +151,28 @@
           <fieldset class="form__contacts">
             <legend class="form__contacts-legend">Контактная информация</legend>
             <p class="form__contacts-paragraph form__contacts-paragraph--phone">
-              <label class="form__contacts-label" for="phone">Контактный телефон*:</label>
-              <label class="form__contacts-label-desktop" for="phone">Телефон*:</label>
-              <input class="form__contacts-input" type="tel" name="phone" id="phone" pattern="8[0-9]{3}-[0-9]{7}" placeholder="Введите телефон" required>
+              <label class="form__contacts-label form__contacts-label--phone" for="phone">Контактный телефон*:</label>
+              <label class="form__contacts-label-desktop form__contacts-label-desktop--phone" for="phone">Телефон*:</label>
+              <input class="form__contacts-input form__contacts-input--phone" type="tel" name="phone" id="phone" pattern="8[0-9]{3}-[0-9]{7}" placeholder="Введите телефон" required>
             </p>
             <p class="form__contacts-paragraph form__contacts-paragraph--mail">
-              <label class="form__contacts-label" for="email">Электронная почта*:</label>
-              <input class="form__contacts-input" type="email" name="email " id="email" placeholder="Введите e-mail" required>
+              <label class="form__contacts-label form__contacts-label--mail" for="email">Электронная почта*:</label>
+              <input class="form__contacts-input form__contacts-input--mail" type="email" name="email " id="email" placeholder="Введите e-mail" required>
             </p>
           </fieldset>
 
           <fieldset class="form__impress">
             <legend class="form__impress-legend">Ваше общее впечатление:</legend>
             <p class="form__impress-paragraph">
-              <input class="form__impress-input" name="radio" id="radio1" type="radio" checked>
+              <input class="form__impress-input visually-hidden" name="radio" id="radio1" type="radio" checked>
               <label class="form__impress-label" for="radio1">Скорее положительное</label>
             </p>
             <p class="form__impress-paragraph">
-              <input class="form__impress-input" name="radio" id="radio2" type="radio">
+              <input class="form__impress-input visually-hidden" name="radio" id="radio2" type="radio">
               <label class="form__impress-label" for="radio2">Скорее отрицательное</label>
             </p>
             <p class="form__impress-paragraph">
-              <input class="form__impress-input" name="radio" id="radio3" type="radio">
+              <input class="form__impress-input visually-hidden" name="radio" id="radio3" type="radio">
               <label class="form__impress-label" for="radio3">Затрудняюсь ответить</label>
             </p>
           </fieldset>
@@ -181,19 +181,19 @@
             <legend class="form__attraction-legend">Посещенные достопримечательности:</legend>
             <div class="form__attraction-container">
               <p class="form__attraction-paragraph">
-                <input class="form__attraction-input" name="check" id="check1" type="checkbox" checked>
+                <input class="form__attraction-input visually-hidden" name="check" id="check1" type="checkbox" checked>
                 <label class="form__attraction-label" for="check1">Мост Дьявола</label>
               </p>
               <p class="form__attraction-paragraph">
-                <input class="form__attraction-input" name="check" id="check2" type="checkbox" checked>
+                <input class="form__attraction-input visually-hidden" name="check" id="check2" type="checkbox" checked>
                 <label class="form__attraction-label" for="check2">Гора-Колокол</label>
               </p>
               <p class="form__attraction-paragraph">
-                <input class="form__attraction-input" name="check" id="check3" type="checkbox" checked>
+                <input class="form__attraction-input visually-hidden" name="check" id="check3" type="checkbox" checked>
                 <label class="form__attraction-label" for="check3">Слайд-парк</label>
               </p>
               <p class="form__attraction-paragraph">
-                <input class="form__attraction-input" name="check" id="check4" type="checkbox">
+                <input class="form__attraction-input visually-hidden" name="check" id="check4" type="checkbox">
                 <label class="form__attraction-label" for="check4">Красные скалы</label>
               </p>
             </div>
