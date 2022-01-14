@@ -65,7 +65,7 @@
       background-image: url("..img/back-desktop2x.jpg");
       background-size: 768px auto;
     }
-
+  }
 
   @media (min-width: $desktop-width) {
     top: -96px;
@@ -79,8 +79,6 @@
     }
   }
 }
-  }
-
 
 .intro--background {
   background-position: 48% 79%;
