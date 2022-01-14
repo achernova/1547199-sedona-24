@@ -17,20 +17,4 @@
   position: relative;
   z-index: 1;
   width: 100%;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.page-header__logo-desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    z-index: 1;
-    width: 187px;
-  }
 }

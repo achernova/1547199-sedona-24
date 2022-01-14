@@ -105,30 +105,16 @@
 
 .description__photo {
   @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.description__photo-tab {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    flex: 2;
+    width: 512px;
+    height: 256px;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    width: 800px;
+    height: 256px;
   }
 }
 
-.description__photo-desktop {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
 
 .description__paragraph {
   margin: 0 auto;
@@ -492,4 +478,8 @@
     left: 88px;
     top: 64px;
   }
+}
+
+.description__file {
+  width: auto;
 }
