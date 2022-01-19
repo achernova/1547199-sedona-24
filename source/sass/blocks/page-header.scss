@@ -18,3 +18,16 @@
   z-index: 1;
   width: 100%;
 }
+
+.page-header__logo-icon-fill {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0 auto;
+    top: 0;
+    z-index: -1;
+    left: 506px;
+    position: absolute;
+  }
+}

@@ -132,6 +132,15 @@
   padding: 18px 0 14px 22px;
   flex-grow: 1;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: $input-hover;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 4px solid $disabled-btn;
+  }
 }
 
 .form__name-paragraph {
@@ -174,6 +183,7 @@
 .form__contacts-paragraph {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -246,6 +256,15 @@
   box-sizing: border-box;
   align-self: center;
   padding-right: 58px;
+
+  &:hover {
+    background-color: $input-hover;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 4px solid $disabled-btn;
+  }
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -400,6 +419,14 @@
   border-radius: 40px;
 }
 
+.form__impress-input + label:hover::before {
+  background-color: $input-hover;
+}
+
+.form__impress-input + label:active::before {
+  background-color: $radio-btn-down;
+}
+
 .form__impress-input:checked + label::after {
   position: absolute;
   content: "";
@@ -409,6 +436,10 @@
   left: 15px;
   background-color: $radio-btn-check;
   border-radius: 40px;
+}
+
+.form__impress-input:checked + label:active::after {
+  opacity: 0.3;
 }
 
 .form__attraction {
@@ -497,6 +528,18 @@
   }
 }
 
+.form__attraction-input + label:hover::before {
+  background-color: $input-hover;
+}
+
+.form__attraction-input + label:active::before {
+  background-color: $radio-btn-down;
+}
+
+.form__attraction-input:checked + label:active::after {
+  opacity: 0.3;
+}
+
 .form__attraction-input:checked + label::after {
   position: absolute;
   content: "";
@@ -541,6 +584,15 @@
   margin-bottom: 50px;
   padding: 14px 12px 0 18px;
 
+  &:hover {
+    background-color: $input-hover;
+  }
+
+  &:active {
+    background-color: $white;
+    border: 4px solid $disabled-btn;
+  }
+
   @media (min-width: $tablet-width) {
     width: 647px;
     padding-top: 18px;
@@ -568,6 +620,20 @@
   padding: 14px 48px 17px 48px;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+    color: $white2;
+  }
+
+  &:disabled {
+    background-color: $disabled-btn;
+    color: $white2;
+  }
 
   @media (min-width: $tablet-width) {
     order: 6;

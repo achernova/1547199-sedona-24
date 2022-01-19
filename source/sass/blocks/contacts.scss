@@ -67,6 +67,20 @@
   cursor: pointer;
   margin-bottom: 48px;
 
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+    color: $white2;
+  }
+
+  &:disabled {
+    background-color: $disabled-btn;
+    color: $white2;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 17px 128px 17px 128px;
     margin-bottom: 55px;

@@ -82,9 +82,36 @@
   width: 47px;
   height: 48px;
   margin-left: 5px;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-down;
+    color: $white2;
+
+    .page-footer__link-icon {
+      opacity: 0.6;
+    }
+  }
 }
 
 .page-footer__link {
   @include links;
   margin: auto;
+  display: flex;
+}
+
+/*.page-footer__develop-link:hover .page-footer__develop-icon {
+  fill: $blue;
+}*/
+
+.page-footer__develop-icon:hover {
+  fill: $blue;
+}
+
+.page-footer__develop-icon:active {
+  fill: $blue;
+  opacity: 0.3;
 }
