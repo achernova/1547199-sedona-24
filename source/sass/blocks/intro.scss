@@ -57,7 +57,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/back-desktop.jpg");
     top: -80px;
-    margin-bottom: -10px;
+    margin-bottom: -17px;
     min-width: 768px;
     height: 291px;
 
@@ -84,7 +84,8 @@
   background-position: 48% 79%;
 
   @media (min-width: $tablet-width) {
-    background-position: 20% 70%;
+    background-size: auto;
+    background-position: 50% 98%;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,10 +95,26 @@
 
 .intro__text {
   z-index: 1;
-  padding-top: 90px;
+  margin-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin-top: 74px;
+  }
 }
 
 .intro-inside__text {
   z-index: 1;
-  padding-top: 55px;
+  margin-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+    margin-top: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 104px;
+  }
 }

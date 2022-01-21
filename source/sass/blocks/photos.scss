@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 79px;
+    margin-top: 75px;
     max-width: 1200px;
   }
 }
@@ -27,7 +27,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 26px;
-    margin-bottom: 27px;
+    margin-bottom: 32px;
   }
 }
 
@@ -45,8 +45,12 @@
     font-size: 13px;
     line-height: 24px;
     margin: 0 auto;
-    margin-bottom: 81px;
+    margin-bottom: 78px;
     width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 78px;
   }
 }
 

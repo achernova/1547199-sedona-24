@@ -48,6 +48,11 @@
     background-color: $white;
     box-shadow: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
+    padding-bottom: 16px;
+  }
 }
 
 .main-nav__item:nth-child(3) {
@@ -72,6 +77,19 @@
   font-size: 18px;
   line-height: 40px;
   cursor: pointer;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $black;
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    color: $menu-active;
+  }
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -120,12 +138,22 @@
   box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
 }
 
-/*.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade($blue, 30%);
-  box-shadow:
-    0 8px 0 0 fade($blue, 30%),
-    0 16px 0 0 fade($blue, 30%);
-}*/
+.main-nav--closed .main-nav__toggle {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 .main-nav--opened .main-nav__toggle {
   top: -80px;
@@ -139,16 +167,26 @@
     left: 25px;
     width: 22px;
     height: 4px;
-    background-color: $blue;
+    background-color: $white;
   }
 
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
+    top: 108px;
   }
 
   &::after {
     transform: rotate(-45deg);
+    top: 108px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

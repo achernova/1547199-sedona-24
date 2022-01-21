@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 22px;
+    margin-top: 82px;
     margin-bottom: 20px;
   }
 }
@@ -33,14 +33,14 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/intro-triangle-tablet.svg");
     width: 768px;
-    top: -125px;
+    top: -119px;
     left: -60px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/intro-triangle-desktop.svg");
     width: 1200px;
-    top: -109px;
+    top: -168px;
     left: -216px;
   }
 }
@@ -65,7 +65,7 @@
     font-size: 30px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 38px;
   }
 }
 
