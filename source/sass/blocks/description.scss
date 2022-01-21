@@ -212,9 +212,9 @@
 
 .description__item--first .description__item-title {
   @media (min-width: $desktop-width) {
-    margin-top: 3px;
     padding: 0 100px;
     margin: auto;
+    margin-top: 3px;
     text-align: center;
   }
 }
@@ -245,7 +245,6 @@
 }
 
 .description__item--second .description__title {
-
   @media (min-width: $desktop-width) {
     text-align: center;
   }
@@ -313,7 +312,7 @@
   position: relative;
 }
 
-.description__item--fourth .description__item-paragraph{
+.description__item--fourth .description__item-paragraph {
   @media (min-width: $mobile-width-only) {
     padding: 0 30px;
   }
