@@ -20,7 +20,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin: 0;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-weight: 700;
@@ -35,21 +35,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    width: 427px;
+    width: 435px;
     margin: 0 auto;
     margin-top: 32px;
     margin-bottom: 40px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 340px;
-    margin-bottom: 20px;
+    margin-bottom: 43px;
   }
 }
 
@@ -87,12 +88,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 62px;
+    margin-bottom: 66px;
   }
 }
 
 .contacts__map {
   margin-top: 49px;
+
+  @media (min-width: $desktop-width) {
+    height: 350px;
+  }
 }
 
 .contacts__map-img {

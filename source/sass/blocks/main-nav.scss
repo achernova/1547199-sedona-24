@@ -148,6 +148,13 @@
   }
 }
 
+.main-nav--opened {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .main-nav--opened .main-nav__toggle {
   top: -80px;
   right: 33px;

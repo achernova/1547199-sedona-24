@@ -6,16 +6,15 @@
   text-align: center;
   padding-bottom: 40px;
   position: relative;
-  margin-bottom: 72px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    top: -4px;
-    margin-bottom: 0;
+    margin-bottom: -4px;
   }
 
   @media (min-width: $desktop-width) {
     top: -70px;
-    padding-bottom: 14px;
+    padding-bottom: 21px;
   }
 }
 
@@ -40,7 +39,7 @@
   line-height: 24px;
   margin: 0 auto;
   margin-bottom: 33px;
-  width: 280px;
+  padding: 0 25px;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -48,7 +47,8 @@
     line-height: 24px;
     width: 445px;
     margin: 0 auto;
-  }
+    padding: 0;
+   }
 }
 
 .presentation__video {
@@ -192,7 +192,7 @@
     width: 32px;
     height: 20px;
     bottom: -44px;
-    left: 194px;
+    left: 176px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/subtitles-white.svg");
@@ -213,7 +213,7 @@
     width: 20px;
     height: 20px;
     bottom: -44px;
-    left: 257px;
+    left: 238px;
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/fullscreen-white.svg");

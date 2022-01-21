@@ -16,7 +16,11 @@
   display: block;
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: 187px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 10;
+  }
 }
 
 .page-header__logo-icon-fill {
@@ -27,7 +31,6 @@
     margin: 0 auto;
     top: 0;
     z-index: -1;
-    left: 506px;
     position: absolute;
   }
 }
