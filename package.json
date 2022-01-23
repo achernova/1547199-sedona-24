@@ -17,9 +17,9 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "8.0.0",
     "gulp-terser": "2.1.0",
-    "postcss": "8.3.11",
+    "postcss": "^8.3.11",
     "postcss-csso": "5.0.1",
-    "stylelint": "14.0.1",
+    "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.11"
   },
   "scripts": {
@@ -45,7 +45,10 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "16.13.0"
+    "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "postcss-scss": "^4.0.3"
+  }
 }
