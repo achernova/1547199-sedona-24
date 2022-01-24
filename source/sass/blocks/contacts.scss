@@ -56,8 +56,8 @@
 }
 
 .contacts__button {
-  font-family: inherit;
   @include links;
+  font-family: inherit;
   display: inline-block;
   margin: 0 auto;
   text-align: center;

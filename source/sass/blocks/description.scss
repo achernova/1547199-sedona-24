@@ -400,6 +400,7 @@
     width: 200px;
     margin-bottom: 11px;
   }
+
   @media (min-width: $tablet-width) {
     padding: 0 40px;
     width: 200px;
@@ -421,14 +422,13 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-top: 0;
     margin-top: 15px;
     width: 178px;
   }
 
   @media (min-width: $desktop-width) {
     width: 249px;
-   }
+  }
 }
 
 .description__list-dignity {
