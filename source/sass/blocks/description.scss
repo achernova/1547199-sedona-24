@@ -18,7 +18,7 @@
   width: 270px;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    width: 600px;
     font-size: 21px;
     margin-bottom: 33px;
   }
@@ -123,6 +123,7 @@
   margin-top: 30px;
   margin-bottom: 9px;
   text-align: center;
+  width: 280px;
 
   @media (min-width: $mobile-width-only) {
     padding: 0 20px;
@@ -132,6 +133,7 @@
     padding: 0;
     font-size: 14px;
     margin-top: 0;
+    width: 640px;
   }
 }
 
@@ -181,8 +183,6 @@
     font-size: 21px;
     line-height: 26px;
     padding: 0 20px;
-    /*width: 100px;
-    margin: 0 auto;*/
   }
 }
 
@@ -203,7 +203,7 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0 auto;
-  padding: 0 20px 0 20px;
+  padding: 0 34px;
 
   @media (min-width: $tablet-width) {
     margin-top: 13px;
@@ -226,6 +226,12 @@
 }
 
 .description__item--first .description__item-paragraph {
+  padding: 0 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 25px;
     width: 334px;
@@ -288,7 +294,17 @@
   @media (min-width: $desktop-width) {
     margin-top: 25px;
     width: 335px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+    padding-top: 11px;
+  }
+}
+
+.description__item--third .description__item-title,
+.description__item--fourth .description__item-title,
+.description__item--fifth .description__item-title {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 200px;
   }
 }
 
@@ -307,6 +323,30 @@
   }
 }
 
+.description__item--third .description__item-title {
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+  }
+}
+
+.description__item--third .description__item-number {
+  @media (min-width: $tablet-width) {
+
+    padding: 0;
+  }
+}
+
+.description__item--third .description__item-paragraph {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    padding-bottom: 0;
+  }
+}
 
 .description__item--fourth {
   position: relative;
@@ -315,6 +355,12 @@
 .description__item--fourth .description__item-paragraph {
   @media (min-width: $mobile-width-only) {
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    width: 330px;
+    padding: 0;
   }
 }
 
@@ -351,6 +397,20 @@
 .description__item--fifth .description__item-title {
   @media (min-width: $tablet-width) {
     padding: 0 40px;
+    width: 200px;
+    margin-bottom: 11px;
+  }
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    width: 200px;
+    margin-top: 7px;
+  }
+}
+
+.description__item--fifth .description__item-number {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -360,20 +420,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 90px;
+    padding: 0;
+    margin-top: 0;
+    margin-top: 15px;
+    width: 178px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 90px;
-  }
+    width: 249px;
+   }
 }
 
 .description__list-dignity {
   @include reset;
-  margin: auto;
+  margin: 0 auto;
   list-style: none;
   margin-top: 33px;
-  margin-left: 0;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -401,7 +463,7 @@
 
 .description__attraction {
   position: relative;
-  padding-left: 70px;
+  padding-left: 48px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -429,7 +491,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 }
 
@@ -450,7 +512,7 @@
 
   @media (min-width: $desktop-width) {
     width: 260px;
-    margin-bottom: 33px;
+    margin-bottom: 28px;
   }
 }
 
@@ -536,8 +598,8 @@
   height: 38px;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
-  top: -10px;
-  left: 20px;
+  top: -13px;
+  left: 1px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon-house-tablet.svg");
@@ -561,8 +623,8 @@
   background-image: url("../img/icon-gift.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  top: -10px;
-  left: 24px;
+  top: -14px;
+  left: 5px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon-gift-tablet.svg");
@@ -574,7 +636,7 @@
 
   @media (min-width: $desktop-width) {
     left: 97px;
-    top: 28px;
+    top: 45px;
   }
 }
 
@@ -585,8 +647,9 @@
   height: 38px;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
-  top: -10px;
-  left: 20px;
+  top: -5px;
+  left: -2px;
+
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/icon-burger-tablet.svg");

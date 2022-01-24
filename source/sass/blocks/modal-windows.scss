@@ -1,43 +1,20 @@
 
 .modal-windows {
+  top: 120px;
   text-align: center;
   background-color: $white;
   position: fixed;
-}
-
-.modal-windows--error {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    position: fixed;
-    width: 400px;
-    height: 347px;
-    box-shadow: 0 7px 15px $shadow;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.modal-windows--send {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    position: fixed;
-    width: 640px;
-    height: 347px;
-    box-shadow: 0 7px 15px $shadow;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  width: 320px;
+  box-shadow: 0px 5px 14px 15px $shadow2;
 }
 
 .modal-windows__title {
-  margin-top: 50px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     width: 353px;
@@ -52,6 +29,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  margin: auto;
+  width: 237px;
 
   @media (min-width: $tablet-width) {
     width: 420px;
@@ -61,16 +40,17 @@
 }
 
 .modal-windows__button {
+  font-family: inherit;
   display: inline-block;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
   text-align: center;
+  text-transform: uppercase;
   color: $white;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   background-color: $blue;
-  padding: 14px 63px 17px 63px;
   border: none;
   cursor: pointer;
 
@@ -79,12 +59,104 @@
   }
 }
 
+.modal-windows--error {
+  display: none;
+  width: 320px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    position: fixed;
+    width: 400px;
+    height: 347px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal-windows--error .modal-windows__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    width: 220px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+}
+
+.modal-windows--error .modal-windows__paragraph {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    margin-bottom: 37px;
+  }
+}
+
+.modal-windows--error .modal-windows__button {
+  width: 180px;
+  padding: 16px 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+  }
+}
+
+.modal-windows--send {
+  display: none;
+  width: 320px;
+  height: 323px;
+
+  @media (min-width: $tablet-width) {
+    position: fixed;
+    width: 640px;
+    height: 347px;
+    box-shadow: 0 7px 15px $shadow;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.modal-windows--send .modal-windows__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    width: 440px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+  }
+}
+
+.modal-windows--send .modal-windows__paragraph {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
+}
 
 .modal-windows__button-container {
   background-color: $input-grey;
-  padding-top: 44px;
+  padding-top: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
+    padding-top: 44px;
+    padding-bottom: 14px;
+  }
+}
+
+.modal-windows--send .modal-windows__button {
+  width: 280px;
+  padding: 16px 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 455px;
   }
 }
