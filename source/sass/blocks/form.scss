@@ -93,9 +93,35 @@
 }
 
 .form__name-legend {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     padding-right: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 159px;
+  }
+}
+
+.form__name-legend::before {
+  position: absolute;
+  content: "";
+  background-color: $disabled-btn;
+  width: 320px;
+  height: 1px;
+  top: -25px;
+  left: -92px;
+
+  @media (min-width: $tablet-width) {
+    transform: rotate(90deg);
+    top: 164px;
+    left: -221px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -297px;
   }
 }
 
@@ -182,10 +208,58 @@
   }
 }
 
+.form__contacts-legend {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.form__contacts-legend::before {
+  position: absolute;
+  content: "";
+  background-color: $disabled-btn;
+  width: 320px;
+  height: 1px;
+  top: -22px;
+  left: -41px;
+
+  @media (min-width: $tablet-width) {
+    width: 124px;
+    top: 11px;
+    left: -186px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    top: 12px;
+    left: -341px;
+  }
+}
+
+.form__contacts-legend::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    background-color: $disabled-btn;
+    width: 124px;
+    height: 1px;
+    top: 11px;
+    left: 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    top: 12px;
+    left: 339px;
+  }
+}
+
 .form__contacts-paragraph {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -216,7 +290,7 @@
 
 .form__contacts-label {
   margin-bottom: 7px;
-  padding-left: 16px;
+  padding-left: 25px;
 
   @media (min-width: $tablet-width) {
     margin-left: 20px;
@@ -241,22 +315,17 @@
   }
 }
 
-.form__contacts-legend {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 23px;
-  }
-}
-
 .form__contacts-input {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
   color: $black;
+  width: 280px;
   border: none;
   outline: none;
   background-color: $input-grey;
-  padding: 18px 0 14px 41px;
+  padding: 18px 0 14px 21px;
   box-sizing: border-box;
   align-self: center;
   padding-right: 58px;
@@ -393,6 +462,7 @@
 }
 
 .form__impress-legend {
+  position: relative;
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
@@ -402,6 +472,20 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 55px;
+  }
+}
+
+.form__impress-legend::before {
+  position: absolute;
+  content: "";
+  background-color: $disabled-btn;
+  width: 320px;
+  height: 1px;
+  top: -20px;
+  left: -43px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -421,12 +505,17 @@
 .form__impress-input + label::before {
   position: absolute;
   content: "";
-  width: 48px;
-  height: 48px;
-  top: -15px;
-  left: 0;
+  width: 52px;
+  height: 52px;
+  top: -19px;
+  left: -3px;
   background-color: $input-grey;
   border-radius: 40px;
+
+  @media (min-width: $desktop-width) {
+    top: -10px;
+    left: 3px;
+  }
 }
 
 .form__impress-input + label:hover::before {
@@ -440,12 +529,17 @@
 .form__impress-input:checked + label::after {
   position: absolute;
   content: "";
-  width: 18px;
-  height: 18px;
-  top: 0;
-  left: 15px;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  left: 13px;
   background-color: $radio-btn-check;
   border-radius: 40px;
+
+  @media (min-width: $desktop-width) {
+    top: 6px;
+    left: 17px;
+  }
 }
 
 .form__impress-input:checked + label:active::after {
@@ -466,6 +560,60 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+  }
+}
+
+.form__attraction-legend {
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 337px;
+  }
+}
+
+.form__attraction-legend::before {
+  position: absolute;
+  content: "";
+  background-color: $disabled-btn;
+  width: 320px;
+  height: 1px;
+  top: -15px;
+  left: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 124px;
+    top: 26px;
+    left: -124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    top: 26px;
+    left: -278px;
+  }
+}
+
+.form__attraction-legend::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    background-color: $disabled-btn;
+    width: 124px;
+    height: 1px;
+    top: 26px;
+    left: 401px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    top: 26px;
+    left: 401px;
   }
 }
 
@@ -509,19 +657,6 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
-  }
-}
-
-.form__attraction-legend {
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    width: 400px;
-    margin-bottom: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 337px;
   }
 }
 
@@ -586,9 +721,50 @@
 
 .form__describe-legend {
   margin-bottom: 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
+  }
+}
+
+.form__describe-legend::before {
+  position: absolute;
+  content: "";
+  background-color: $disabled-btn;
+  width: 320px;
+  height: 1px;
+  top: -20px;
+  left: -51px;
+
+  @media (min-width: $tablet-width) {
+    width: 124px;
+    top: 9px;
+    left: -198px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    top: 8px;
+    left: -353px;
+  }
+}
+
+.form__describe-legend::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    background-color: $disabled-btn;
+    width: 124px;
+    height: 1px;
+    top: 9px;
+    left: 327px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    top: 8px;
+    left: 327px;
   }
 }
 
@@ -597,11 +773,11 @@
   font-size: 18px;
   line-height: 26px;
   width: 279px;
-  height: 150px;
+  height: 160px;
   background-color: $input-grey;
   border: none;
   outline: none;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding: 14px 12px 0 18px;
   font-family: inherit;
 
@@ -660,7 +836,7 @@
     order: 6;
     width: 324px;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 7px;
   }
 
