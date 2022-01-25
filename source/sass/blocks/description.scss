@@ -372,7 +372,7 @@
   width: 280px;
   height: 1px;
   top: 0;
-  left: 0;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -387,7 +387,7 @@
   width: 280px;
   height: 1px;
   bottom: 0;
-  left: 0;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;

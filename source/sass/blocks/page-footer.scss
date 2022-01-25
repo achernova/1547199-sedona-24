@@ -82,11 +82,22 @@
 }
 
 .page-footer__item {
-  background-color: $blue;
   display: flex;
+  margin-left: 5px;
+}
+
+.page-footer__link {
+  @include links;
+  margin: auto;
+  display: flex;
+  text-decoration: none;
+  display: flex;
+  background-color: #81b3d2;
   width: 47px;
   height: 48px;
-  margin-left: 5px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: $blue-hover;
@@ -101,16 +112,6 @@
     }
   }
 }
-
-.page-footer__link {
-  @include links;
-  margin: auto;
-  display: flex;
-}
-
-/*.page-footer__develop-link:hover .page-footer__develop-icon {
-  fill: $blue;
-}*/
 
 .page-footer__develop-icon:hover {
   fill: $blue;

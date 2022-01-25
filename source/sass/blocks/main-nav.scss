@@ -42,7 +42,7 @@
   background-color: $blue;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 1px $shadow3, inset 1px $white3;
+  box-shadow: 0 1px 0 $shadow3, inset 0 1px 0 $white3;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -56,7 +56,12 @@
 }
 
 .main-nav__item:last-child {
-  box-shadow: 1px $shadow3, inset 1px $white3, inset -4px $shadow4;
+  box-shadow: 0 1px 0 $shadow3, inset 0 1px 0 $white3, inset 0 -4px 0 $shadow4;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
+
 }
 
 .main-nav__item:nth-child(3) {
