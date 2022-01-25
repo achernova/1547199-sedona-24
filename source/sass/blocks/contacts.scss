@@ -44,18 +44,20 @@
     line-height: 24px;
     width: 435px;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 34px;
     margin-bottom: 40px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 43px;
+    margin-top: 32px;
+    margin-bottom: 42px;
   }
 }
 
 .contacts__button {
   @include links;
+  font-family: inherit;
   display: inline-block;
   margin: 0 auto;
   text-align: center;
