@@ -6,6 +6,8 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page-body">
     <svg style="display: none">
@@ -197,18 +199,30 @@
       <section class="presentation">
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <figure class="presentation__video">
+        <div class="presentation__video">
           <picture class="presentation__video-photo">
             <source media="(min-width: 1280px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="presentation__video-image" src="img/video-mobile.jpg" width="320" height="201" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
           </picture>
-          <figcaption class="presentation__video-scroll">
-            <input class="presentation__video-input" type="range" id="range" min="0" max="100" value="20" name="range" step="1" >
-            <label class="presentation__video-label" for="range"></label>
-          </figcaption>
-        </figure>
-        <div class="presentation__video-buttons"></div>
+          <div class="presentation__video-scroll">
+            <div class="presentation__video-range"></div>
+            <div class="presentation__video-toggle">
+              <span class="visually-hidden">Полоса прокрутки</span>
+            </div>
+          </div>
+        </div>
+        <div class="presentation__video-buttons">
+          <button class="presentation__video-replay" type="button">
+            <span class="visually-hidden">Повтор</span>
+          </button>
+          <button class="presentation__video-subtitle" type="button">
+            <span class="visually-hidden">Субтитры</span>
+          </button>
+          <button class="presentation__video-fullscreen" type="button">
+            <span class="visually-hidden">Полный экран</span>
+          </button>
+        </div>
       </section>
 
     </main>
@@ -218,6 +232,7 @@
       <h2 class="page-footer__tag">#visitSEDONA</h2>
       <ul class="page-footer__list">
         <li class="page-footer__item">
+          <span class="visually-hidden">twitter</span>
           <a class="page-footer__link" href="#">
             <svg class="page-footer__link-icon" width="24" height="21">
               <use xlink:href="#icon-twitter"></use>
@@ -225,6 +240,7 @@
           </a>
         </li>
         <li class="page-footer__item">
+          <span class="visually-hidden">fecebook</span>
           <a class="page-footer__link" href="#">
             <svg class="page-footer__link-icon" width="9" height="19">
               <use xlink:href="#icon-facebook"></use>
@@ -232,6 +248,7 @@
           </a>
         </li>
         <li class="page-footer__item">
+          <span class="visually-hidden">youtube</span>
           <a class="page-footer__link" href="#">
             <svg class="page-footer__link-icon" width="20" height="14">
               <use xlink:href="#icon-youtube"></use>
@@ -241,6 +258,7 @@
       </ul>
       <div class="page-footer__develop">
         <p class="page-footer__develop-paragraph">Разработано</p>
+        <span class="visually-hidden">сайт htmlacademy</span>
         <a class="page-footer__develop-link" href="htmlacademy.ru">
           <svg class="page-footer__develop-icon" width="27" height="35">
             <use xlink:href="#icon-develope"></use>

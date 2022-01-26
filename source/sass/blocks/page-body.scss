@@ -1,0 +1,16 @@
+.page-body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  color: $black;
+  background-color: $white;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-rows: min-content max-content min-content;
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-desktop;
+  }
+}
